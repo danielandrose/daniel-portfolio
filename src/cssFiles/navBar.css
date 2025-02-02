@@ -13,7 +13,6 @@
 .logo {
     margin: auto 10px;
     padding: 0 10px;
-    font-family: "Kranky", serif;
     color: #EDF4F2;
 }
 
@@ -38,7 +37,7 @@ li>a {
 }
 
 .active{
-    color:maroon;
+    color:#17252A;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -52,33 +51,39 @@ li>a {
     display: none; 
 }
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
     .menu-btn {
         display: block;
-        background: transparent;
+        background-color: transparent;
+        color: #ffffff;
+    }
+
+    .nav-bar {
+        padding: 0px;
+        top: 0;
+        left: 0;
+    }
+
+    
+    .nav-links li {
+        margin: 30px auto;
     }
 
     .nav-links {
         flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
         width: 100vw;
-        height: 100vh;
-        background-color: #5b478b;
-        transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 105;
+        height: 90vh;
         justify-content: center;
-        align-items: center;
+        background-color: #17252A;
+        position: absolute;
+        top: 0;
+        left:0;
+        transform: translateY(-100%); 
+        transition: all 0.5s ease;
     }
 
     .mobile-menu {
-        transform: translateY(0);
-    }
+        transform: translateY(0); 
 
-    .nav-links li {
-        padding: 20px 0;
-        text-align: center;
     }
 }

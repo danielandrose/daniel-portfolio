@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
 }
 
 .home {
@@ -10,7 +9,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .daniel-details {
@@ -65,5 +64,30 @@
   .home{
     flex-direction: column-reverse;
     gap:40px;
+    height:100%;
+    align-content:space-around;
+    align-items:center;
+    padding-top: 100px;
+  }
+  .profile-img{
+    max-height:310px;
+    max-width:300px;
+    margin:0px;
+    padding:0px
+  }
+  .profile-photo{
+    width:100%;
+    display:flex;
+    justify-content: center;
+  }
+  .daniel-details{
+    width:100%;
+    display:flex;
+    justify-content:center;
+  }
+  .daniel-details p{
+    margin:0px;
+    font-size: 7vw;
+    text-align: center;
   }
 }

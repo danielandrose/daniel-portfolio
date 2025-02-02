@@ -23,7 +23,7 @@ const Skills = () => {
             <div className="total-container">
                 <div className="skill-sub-container">
                     <h2 className="skill-heading">Programming Languages</h2>
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <div className="skills-container">
                         <div className="skill-element">
                             <img src={c_logo} alt="c_Logo" />
@@ -45,7 +45,7 @@ const Skills = () => {
                 </div>
                 <div className="skill-sub-container">
                     <h2 className="skill-heading">Frontend Development</h2>
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <div className="skills-container">
                         <div className="skill-element">
                             <img src={html_logo} alt="html_logo" />
@@ -63,7 +63,7 @@ const Skills = () => {
                 </div>
                 <div className="skill-sub-container">
                     <h2 className="skill-heading">Backend Development</h2>
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <div className="skills-container">
                         <div className="skill-element">
                             <img src={node_logo} alt="node_logo" />
@@ -86,7 +86,7 @@ const Skills = () => {
 
                 <div className="skill-sub-container">
                     <h2 className="skill-heading">Tools</h2>
-                    <div class="line"></div>
+                    <div className="line"></div>
                     <div className="skills-container">
                         <div className="skill-element">
                             <img src={vs_logo} alt="vs_logo" />
