@@ -5,45 +5,6 @@
   height: 100vh;
 }
 
-.nav-bar {
-  right: 0px;
-  left: 0px;
-  display: flex;
-  justify-content: space-between;
-  height:65px;
-}
-
-.nav-back{
-  background-color: #17252A;
-}
-
-.logo {
-  margin: auto 10px;
-  padding: 0 10px;
-  font-family: "Kranky", serif;
-  color:#EDF4F2;
-}
-
-li {
-  list-style: none;
-}
-
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  margin: auto 20px;
-}
-
-.nav-list>li {
-  margin: auto 20px;
-  font-size: 15px;
-}
-
-li>a {
-  text-decoration: none;
-  color: #EDF4F2;
-}
-
 .home {
   display: flex;
   flex-direction: row;
@@ -94,8 +55,15 @@ li>a {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 430px;
+  height: 410px;
   width: 400px;
   border-radius: 100%;
   margin: auto
+}
+
+@media only screen and (max-width:1000px){
+  .home{
+    flex-direction: column-reverse;
+    gap:40px;
+  }
 }

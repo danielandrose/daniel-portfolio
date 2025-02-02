@@ -9,13 +9,14 @@ p{
 }
 .skill-heading{
     text-align: center;
-    margin: 40px 0px 5px 0px;
+    margin: 40px 0px 10px 0px;
+    padding:0px 5px;
 }
 .line{
     width:40%;
     height:4px;
     background-color: #3892db;
-    margin:10px auto;
+    margin:7px auto 2px auto;
     border-radius: 5px;
 }
 .skills-container{
@@ -24,13 +25,13 @@ p{
     justify-content:space-around;
     flex-wrap: wrap;
     margin:0px;
-    padding:35px 0px 35px 0px;
+    padding:25px 0px 25px 0px;
     
 }
 .skill-sub-container{
     width:75%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom:30px;
+    margin-bottom:20px;
     margin-top: 20px;
 }
 .total-container{
