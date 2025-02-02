@@ -43,12 +43,19 @@ li>a {
 }
 
 .menu-btn {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 40px;
+    position:absolute;
+    right: 20px;
+    width: 50px;
+    height:30px;
     cursor: pointer;
     display: none; 
+    margin:0px;
+    padding:0px;
+}
+
+.menu{
+    display:flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 850px) {
@@ -71,13 +78,13 @@ li>a {
 
     .nav-links {
         flex-direction: column;
-        width: 100vw;
-        height: 90vh;
+        width: 70%;
+        height: 45%;
         justify-content: center;
         background-color: #17252A;
         position: absolute;
         top: 0;
-        left:0;
+        right:0;
         transform: translateY(-100%); 
         transition: all 0.5s ease;
     }

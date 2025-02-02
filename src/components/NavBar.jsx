@@ -20,10 +20,11 @@ function NavBar() {
                 <li className="nav-back"><a className="nav-back" href="#" onClick={respond}>Experience</a></li>
                 <li className="nav-back"><a className="nav-back" href="#" onClick={respond}>Education</a></li>
             </ul>
+            <div className='menu'>
             {isActive 
                 ? <RxCross1 onClick={respond} className="menu-btn" /> 
                 : <GiHamburgerMenu onClick={respond} className="menu-btn" />
-            }
+            }</div>
         </nav>
     );
 }
