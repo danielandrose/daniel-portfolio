@@ -79,7 +79,7 @@ li>a {
     .nav-links {
         flex-direction: column;
         width: 70%;
-        height: 45%;
+        height: 55%;
         justify-content: center;
         background-color: #17252A;
         position: absolute;
