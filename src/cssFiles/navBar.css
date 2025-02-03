@@ -56,9 +56,16 @@ li>a {
 .menu{
     display:flex;
     align-items: center;
+    display: none;
 }
 
 @media only screen and (max-width: 850px) {
+    .menu{
+        display: block;
+        display:flex;
+        align-items: center;
+        
+    }
     .menu-btn {
         display: block;
         background-color: transparent;

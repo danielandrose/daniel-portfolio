@@ -16,7 +16,8 @@ function NavBar() {
             <ul className={`nav-list nav-back nav-links ${isActive ? 'mobile-menu' : ''}`}>
                 <li className="nav-back"><Link className="nav-back" to="/" onClick={respond}>Home</Link></li>
                 <li className="nav-back"><Link className="nav-back" to="/skills" onClick={respond}>Skills</Link></li>
-                <li className="nav-back"><a className="nav-back" href="#" onClick={respond}>Projects</a></li>
+
+                <li className="nav-back"><Link className="nav-back" to="/projects" onClick={respond}>Projects</Link></li>
                 <li className="nav-back"><a className="nav-back" href="#" onClick={respond}>Experience</a></li>
                 <li className="nav-back"><a className="nav-back" href="#" onClick={respond}>Education</a></li>
             </ul>

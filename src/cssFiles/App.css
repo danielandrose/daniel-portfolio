@@ -26,12 +26,13 @@
   font-size: 40px;
 }
 
-.sub-name {
-  color: #3892db
+span{
+  color: #3892db;
+  font-size: 37px;
 }
 
 .name {
-  color: #17252A
+  color: #17252A;
 }
 
 .details-buttons>button {
@@ -89,5 +90,8 @@
     margin:0px;
     font-size: 7vw;
     text-align: center;
+  }
+  span{
+    font-size: 6vw
   }
 }
