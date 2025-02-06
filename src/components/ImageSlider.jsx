@@ -5,7 +5,7 @@ const ImageSlider = ({slides})=>{
     
     const sliderStyles={
         height:'100%',
-        position:'relative'
+        position:'relative',
     }
     const slideStyles={
         width:'100%',
@@ -13,7 +13,8 @@ const ImageSlider = ({slides})=>{
         borderRadius:'0px',
         backgroundPosition:'center',
         backgroundSize:'cover',
-        backgroundImage:`url(${slides[currentIndex].url})`
+        backgroundImage:`url(${slides[currentIndex].url})`,
+        zIndex:0
     }
     
     const leftArrowStyles={
