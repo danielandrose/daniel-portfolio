@@ -13,7 +13,7 @@ const ImageSlider = ({slides})=>{
         borderRadius:'0px',
         backgroundPosition:'center',
         backgroundSize:'cover',
-        backgroundImage:`url(${slides[currentIndex].url})`
+        backgroundImage:`url(${slides[currentIndex].url})`,
     }
     
     const leftArrowStyles={
