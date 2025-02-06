@@ -13,7 +13,7 @@ const ImageSlider = ({slides})=>{
         borderRadius:'0px',
         backgroundPosition:'center',
         backgroundSize:'cover',
-        backgroundImage:`url(${slides[currentIndex].url})`,
+        backgroundImage:`url(${slides[currentIndex].url})`
     }
     
     const leftArrowStyles={
@@ -52,31 +52,11 @@ const ImageSlider = ({slides})=>{
         setCurrentIndex(newIndex)
     }
 
-    const dotsContainerStyles={
-        display:'flex',
-        justifyContent:'center',
-    }
-    const dotStyles={
-        margin: '0 3px',
-        cursor:'pointer'
-    }
-
-    const goToSlide=(slideIndex)=>{
-        setCurrentIndex(slideIndex);
-    }
-
     return (
         <div style={(sliderStyles)}>
             <div style={leftArrowStyles} onClick={goToPrevious}>❰</div>
             <div style={slideStyles}></div>
             <div style={rightArrowStyles} onClick={goToNext}>❱</div>
-            {/*<div style={dotsContainerStyles}>
-                {slides.map((slide,slideIndex)=>(
-                    <div style={dotStyles} key={slideIndex} onClick={()=>goToSlide(slideIndex)}>
-                        ●
-                    </div>
-            ))}
-            </div>*/}
         </div>
     )
 }
