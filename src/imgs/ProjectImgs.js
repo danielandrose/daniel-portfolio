@@ -14,10 +14,10 @@ const proj1_img3 = new URL("../imgs/AccPrevSys/proj1_img3.PNG", import.meta.url)
 const proj1_img4 = new URL("../imgs/AccPrevSys/proj1_img4.PNG", import.meta.url).href;
 
 const Project1=[
-    {url:proj1_img1,title:"PlantsAndTreeInfo"},
-    {url:proj1_img2,title:"PlantsAndTreeInfo"},
-    {url:proj1_img3,title:"PlantsAndTreeInfo"},
-    {url:proj1_img4,title:"PlantsAndTreeInfo"},
+    {url:proj1_img1,title:"AccPrevSys"},
+    {url:proj1_img2,title:"AccPrevSys"},
+    {url:proj1_img3,title:"AccPrevSys"},
+    {url:proj1_img4,title:"AccPrevSys"},
 ]
 
 const Project2=[
