@@ -46,8 +46,8 @@ const Projects = () => {
                                 <img className="view" src={search_icon} />
                             </div>
                         </div>
-                        <h4>Description:</h4><p className="desc">Designed a real-time system to monitor tire pressure and battery percentage for vehicle safety. Built a responsive React
-                            interface and integrated REST APIs with Node.js and MongoDB</p>
+                        <h4>Description:</h4><p className="desc">Developed a MERN stack web application to provide detailed plant and tree information, with features for browsing, 
+                        searching, and filtering. Utilized Node.js for a high-performance backend</p>
                         <div className="tech-stack">
                             <p className="tech">React JS</p>
                             <p className="tech">Node JS</p>
