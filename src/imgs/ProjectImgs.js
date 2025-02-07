@@ -1,11 +1,12 @@
 import Project1_img1 from "../imgs/AccPrevSys/img1.jpg"
 import Project2_img2 from "../imgs/AccPrevSys/img2.jpg"
-import proj2_img1 from "../imgs/PlantsAndTreeInfo/proj2_img1"
-import proj2_img2 from "../imgs/PlantsAndTreeInfo/proj2_img2"
-import proj2_img3 from "../imgs/PlantsAndTreeInfo/proj2_img3"
-import proj2_img4 from "../imgs/PlantsAndTreeInfo/proj2_img4"
-import proj2_img5 from "../imgs/PlantsAndTreeInfo/proj2_img5"
-import proj2_img6 from "../imgs/PlantsAndTreeInfo/proj2_img6"
+
+const proj2_img1 = new URL("../imgs/PlantsAndTreeInfo/proj2_img1.PNG", import.meta.url).href;
+const proj2_img2 = new URL("../imgs/PlantsAndTreeInfo/proj2_img2.PNG", import.meta.url).href;
+const proj2_img3 = new URL("../imgs/PlantsAndTreeInfo/proj2_img3.PNG", import.meta.url).href;
+const proj2_img4 = new URL("../imgs/PlantsAndTreeInfo/proj2_img4.PNG", import.meta.url).href;
+const proj2_img5 = new URL("../imgs/PlantsAndTreeInfo/proj2_img5.PNG", import.meta.url).href;
+const proj2_img6 = new URL("../imgs/PlantsAndTreeInfo/proj2_img6.PNG", import.meta.url).href;
 const Project1=[
     {url:Project1_img1,title:"Accident Prevention System"},
     {url:Project2_img2,title:"Accident Prevention System"}

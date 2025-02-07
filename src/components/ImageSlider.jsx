@@ -2,7 +2,7 @@ import {useState} from "react"
 
 const ImageSlider = ({slides})=>{
     const [currentIndex,setCurrentIndex]=useState(0);
-    
+
     const sliderStyles={
         height:'100%',
         position:'relative',
@@ -14,7 +14,7 @@ const ImageSlider = ({slides})=>{
         backgroundPosition:'center',
         backgroundSize:'cover',
         backgroundImage:`url(${slides[currentIndex].url})`,
-        zIndex:0
+        zIndex:0,
     }
     
     const leftArrowStyles={
@@ -23,10 +23,10 @@ const ImageSlider = ({slides})=>{
         transform:'translate(0,-50%)',
         left: '30px',
         fontSize:'45px',
-        color:'#ffffff',
         zIndex:1,
         cursor:'pointer',
-        background:'transparent'
+        background:'transparent',
+        color:'#b0b0b0'
     }
 
     const rightArrowStyles={
@@ -35,10 +35,10 @@ const ImageSlider = ({slides})=>{
         transform:'translate(0,-50%)',
         right: '30px',
         fontSize:'45px',
-        color:'#ffffff',
         zIndex:1,
         cursor:'pointer',
-        background:'transparent'
+        background:'transparent',
+        color:'#b0b0b0'
     }
     
     const goToPrevious=()=>{

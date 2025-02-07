@@ -26,6 +26,7 @@ const Projects = () => {
                             interface and integrated REST APIs with Node.js and MongoDB</p>
                         <div className="tech-stack">
                             <p className="tech">React JS</p>
+                            <p className="tech">Redux</p>
                             <p className="tech">Node JS</p>
                             <p className="tech">Express JS</p>
                             <p className="tech">Mongo DB</p>
