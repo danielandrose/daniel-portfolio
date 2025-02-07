@@ -18,6 +18,7 @@ const Projects = () => {
                             <h3>Advanced Accident System</h3>
                             <div className="view-container">
                                 <img className="view" src={github_icon} />
+
                                 <img className="view" src={search_icon} />
                             </div>
                         </div>
