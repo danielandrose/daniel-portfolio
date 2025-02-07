@@ -35,11 +35,11 @@ const Projects = () => {
                 </div>
                 <div className="project-sub-container">
                 <div className="slider">
-                        <ImageSlider slides={Project1} />
+                        <ImageSlider slides={Project2} />
                     </div>
                     <div className="desc-container">
                         <div className="title-container">
-                            <h3>Advanced Accident System</h3>
+                            <h3>Plants and Trees Info</h3>
                             <div className="view-container">
                                 <img className="view" src={github_icon} />
                                 <img className="view" src={search_icon} />
