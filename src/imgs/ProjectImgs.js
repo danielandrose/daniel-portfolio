@@ -1,7 +1,7 @@
 import proj1_img1 from "../imgs/AccPrevSys/proj1_img1.jpg"
-import proj1_img2 from "../imgs/AccPrevSys/proj2_img1.jpg"
-import proj1_img3 from "../imgs/AccPrevSys/proj3_img1.jpg"
-import proj1_img4 from "../imgs/AccPrevSys/proj4_img1.jpg"
+import proj1_img2 from "../imgs/AccPrevSys/proj1_img2.jpg"
+import proj1_img3 from "../imgs/AccPrevSys/proj1_img3.jpg"
+import proj1_img4 from "../imgs/AccPrevSys/proj1_img4.jpg"
 
 const proj2_img1 = new URL("../imgs/PlantsAndTreeInfo/proj2_img1.PNG", import.meta.url).href;
 const proj2_img2 = new URL("../imgs/PlantsAndTreeInfo/proj2_img2.PNG", import.meta.url).href;
