@@ -15,11 +15,13 @@ const Projects = () => {
                     </div>
                     <div className="desc-container">
                         <div className="title-container">
-                            <h3>Advanced Accident System</h3>
+                            <h3>Advanced Accident Prevention System</h3>
                             <div className="view-container">
-                                <img className="view" src={github_icon} />
+                                <a className="link" href="https://github.com/danielandrose/AnalogDevices.git" target="_blank" rel="noopener noreferrer">
+                                    <img className="view" src={github_icon} />
+                                </a>
 
-                                <a href="https://aquamarine-dusk-923212.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                <a className="link" href="https://aquamarine-dusk-923212.netlify.app/" target="_blank" rel="noopener noreferrer">
                                     <img className="view" src={search_icon} alt="Search Icon" />
                                 </a>
                             </div>
@@ -44,8 +46,9 @@ const Projects = () => {
                         <div className="title-container">
                             <h3>Plants and Trees Info</h3>
                             <div className="view-container">
-                                <img className="view" src={github_icon} />
-                                <img className="view" src={search_icon} />
+                                <a className="link" href="https://github.com/danielandrose/FloraFusion.git" target="_blank" rel="noopener noreferrer">
+                                    <img className="view" src={github_icon} />
+                                </a>
                             </div>
                         </div>
                         <h4>Description:</h4><p className="desc">Developed a MERN stack web application to provide detailed plant and tree information, with features for browsing,
