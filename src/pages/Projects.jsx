@@ -19,7 +19,9 @@ const Projects = () => {
                             <div className="view-container">
                                 <img className="view" src={github_icon} />
 
-                                <img className="view" src={search_icon} />
+                                <a href="https://aquamarine-dusk-923212.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                    <img className="view" src={search_icon} alt="Search Icon" />
+                                </a>
                             </div>
                         </div>
                         <h4>Description:</h4><p className="desc">Designed a real-time system to monitor tire pressure and battery percentage for vehicle safety. Built a responsive React
@@ -35,7 +37,7 @@ const Projects = () => {
 
                 </div>
                 <div className="project-sub-container">
-                <div className="slider">
+                    <div className="slider">
                         <ImageSlider slides={Project2} />
                     </div>
                     <div className="desc-container">
@@ -46,8 +48,8 @@ const Projects = () => {
                                 <img className="view" src={search_icon} />
                             </div>
                         </div>
-                        <h4>Description:</h4><p className="desc">Developed a MERN stack web application to provide detailed plant and tree information, with features for browsing, 
-                        searching, and filtering. Utilized Node.js for a high-performance backend</p>
+                        <h4>Description:</h4><p className="desc">Developed a MERN stack web application to provide detailed plant and tree information, with features for browsing,
+                            searching, and filtering. Utilized Node.js for a high-performance backend</p>
                         <div className="tech-stack">
                             <p className="tech">React JS</p>
                             <p className="tech">Node JS</p>
@@ -57,7 +59,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="project-sub-container">
-                <div className="slider">
+                    <div className="slider">
                         <ImageSlider slides={Project1} />
                     </div>
                     <div className="desc-container">
