@@ -14,7 +14,7 @@ const Project1=[
     {url:proj1_img1,title:"AccPrevSys"},
     {url:proj2_img2,title:"AccPrevSys"},
     {url:proj1_img3,title:"AccPrevSys"},
-    {url:proj1_img4,title:"AccPrevSys"},
+    {url:proj1_img4,title:"AccPrevSys"}
 ]
 
 const Project2=[
