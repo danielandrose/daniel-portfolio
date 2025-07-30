@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width:100%;
-    height:100%
+    height:100%;
 }
 .current-image{
     border-radius: 0.5rem;
@@ -17,7 +17,8 @@
     width:2rem;
     height:2rem;
     color:white;
-    filter:drop-shadow(0px 0px 5px #555)
+    filter:drop-shadow(0px 0px 5px #555);
+    background-color: transparent 
 }
 .arrow-left{
     left:1rem
@@ -29,6 +30,7 @@
     display:flex;
     position:absolute;
     bottom:1rem;
+    background-color: transparent  
 }
 .current-indicator{
     background-color: #505050;
