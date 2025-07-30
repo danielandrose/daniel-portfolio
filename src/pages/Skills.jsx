@@ -18,7 +18,7 @@ import canva_logo from "../icons/canva_logo.svg"
 
 const Skills = () => {
     return (
-        <div className='skill-page'>
+        <div id="skills" className='skill-page'>
             <h1 className="my-skills-heading">My Skills</h1>
             <div className="total-container">
                 <div className="skill-sub-container">

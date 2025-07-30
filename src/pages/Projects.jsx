@@ -1,12 +1,13 @@
 import ImageSlider from "../components/ImageSlider"
 import '../cssFiles/Project.css'
-import { Project1, Project2 } from "../imgs/ProjectImgs.js"
+import Project1 from "../imgs/AccPrevSys/AccPrevSysdata.js"
+import Project2 from "../imgs/PlantsAndTreeInfo/plantAndTreeInfo.js"
 import github_icon from "../icons/github_icon.svg"
 import search_icon from "../icons/search_icon.svg"
 
 const Projects = () => {
     return (
-        <div className="project-page">
+        <div id="projects" className="project-page">
             <h1>My Projects</h1>
             <div className="project-container">
                 <div className="project-sub-container">

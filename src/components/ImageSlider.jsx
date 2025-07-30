@@ -1,65 +1,41 @@
-import {useState} from "react"
+import React, { useState, useEffect } from 'react'
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
+import "../cssFiles/ImageSlider.css"
 
-const ImageSlider = ({slides})=>{
-    const [currentIndex,setCurrentIndex]=useState(0);
+export default function ImageSlider({ slides }) {
+    const [currentSlide, setCurrentSlide] = useState(0)
 
-    const sliderStyles={
-        height:'100%',
-        position:'relative',
-    }
-    const slideStyles={
-        width:'100%',
-        height:'100%',
-        borderRadius:'0px',
-        backgroundPosition:'center',
-        backgroundSize:'cover',
-        backgroundImage:`url(${slides[currentIndex].url})`,
-        zIndex:0,
-    }
-    
-    const leftArrowStyles={
-        position:'absolute',
-        top:'50%',
-        transform:'translate(0,-50%)',
-        left: '30px',
-        fontSize:'45px',
-        zIndex:1,
-        cursor:'pointer',
-        background:'transparent',
-        color:'#b0b0b0'
+    function handlePrevious() {
+        setCurrentSlide(currentSlide == 0 ? slides.length : currentSlide - 1)
     }
 
-    const rightArrowStyles={
-        position:'absolute',
-        top:'50%',
-        transform:'translate(0,-50%)',
-        right: '30px',
-        fontSize:'45px',
-        zIndex:1,
-        cursor:'pointer',
-        background:'transparent',
-        color:'#b0b0b0'
-    }
-    
-    const goToPrevious=()=>{
-        const isFirstSlide=currentIndex===0
-        const newIndex=isFirstSlide?slides.length-1:currentIndex-1
-        setCurrentIndex(newIndex)
+    function handleNext() {
+        setCurrentSlide(currentSlide == slides.length - 1 ? 0 : currentSlide + 1);
     }
 
-    const goToNext=()=>{
-        const isLastSlide=currentIndex===slides.length-1
-        const newIndex=isLastSlide?0:currentIndex+1
-        setCurrentIndex(newIndex)
-    }
-
-    return (
-        <div style={(sliderStyles)}>
-            <div style={leftArrowStyles} onClick={goToPrevious}>❰</div>
-            <div style={slideStyles}></div>
-            <div style={rightArrowStyles} onClick={goToNext}>❱</div>
-        </div>
-    )
+    return <div className="container">
+        <BsArrowLeftCircleFill onClick={handlePrevious} className="arrow arrow-left" />
+        {
+            slides.map((imageItem, ind) => (
+                <img
+                    key={imageItem.id}
+                    src={imageItem.url}
+                    alt={imageItem.alt}
+                    className={currentSlide === ind ? "current-image" : "current-image hide-current-image"}
+                />
+            ))
+        }
+        <BsArrowRightCircleFill onClick={handleNext} className="arrow arrow-right" />
+        <span className="circle-indicators">
+            {
+                slides.map((_, ind) =>
+                    <button
+                        key={ind}
+                        className={currentSlide === ind ? "current-indicator" : "current-indicator inactive-indicator"}
+                        onClick={() => setCurrentSlide(ind)}
+                    ></button>
+                )
+            }
+        </span>
+    </div>
 }
-
-export default ImageSlider

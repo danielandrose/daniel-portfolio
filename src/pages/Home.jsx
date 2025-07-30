@@ -1,7 +1,7 @@
 import profile from "../imgs/PortfolioImage.jpg"
 function Home() {
     return (
-        <div className="home">
+        <div id="#home" className="home">
             <div className="daniel-details">
                 <p className='sub-name'><span>Hi Friends,</span></p>
                 <p className='name'>I'm Daniel Androse</p>

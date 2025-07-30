@@ -1,44 +1,48 @@
-.sliderStyles{
-    height:100%;
-    position:relative
-}
-.slideStyles{
+.container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width:100%;
-    height:100%;
-    border-radius:0px;
-    background-position:center;
-    background-size:cover;
+    height:100%
 }
-
-.leftArrowStyles{
+.current-image{
+    border-radius: 0.5rem;
+    box-shadow:0px 0px 7px #666;
+    width:100%;
+    height:100%
+}
+.arrow{
     position:absolute;
-    top:50%;
-    transform:translate(0,-50%);
-    left: 30px;
-    font-size:45px;
-    color:#ffffff;
-    z-index:0;
-    cursor:pointer;
-    background:transparent
+    width:2rem;
+    height:2rem;
+    color:white;
+    filter:drop-shadow(0px 0px 5px #555)
 }
-
-.rightArrowStyles{
+.arrow-left{
+    left:1rem
+}
+.arrow-right{
+    right:1rem
+}
+.circle-indicators{
+    display:flex;
     position:absolute;
-    top:50%;
-    transform:translate(0,-50%);
-    right: 30px;
-    font-size:45px;
-    color:#ffffff;
-    z-index:0;
-    cursor:'pointer';
-    background:'transparent'
+    bottom:1rem;
 }
-
-.dotsContainerStyles{
-    display:'flex';
-    justify-content:'center';
+.current-indicator{
+    background-color: #505050;
+    height:15px;
+    width:15px;
+    border-radius: 50%;
+    border:none;
+    outline:none;
+    margin:0 0.2rem;
+    cursor:pointer
 }
-.dotStyles{
-    margin: '0 3px';
-    cursor:'pointer'
+.hide-current-image{
+    display:none;
+}
+.inactive-indicator{
+    background-color: #c70c0c;
 }
